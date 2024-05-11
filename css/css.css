@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;padding: 0;font-family:"Figtree" ; box-sizing: border-box
+}
+:root{ --Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);}
+.page{background-color: var(--Yellow);
+    min-height: 100vh;}
+section{background-color: var(--Yellow);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .box{background-color: white;
+    padding: 20px;
+    border-radius: 20px;    position: absolute;
+    z-index: 2;
+}
+.black{      width: 389px;
+    margin-left: 47px;
+    height: 545px;
+    background: #000000ba;
+    margin-top: 45px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px;
+}
+.box .learn{color: var(--Black);
+background-color: var(--Yellow);
+font-weight: 800;
+font-size: 23px;
+margin-top: 5px;
+width: 130px;
+padding: 5px;
+padding-left: 20px;
+margin-bottom: 5px;}
+.box .date{
+    color: var(--Black);margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+h3{    font-weight: 900;
+    margin-bottom: 20px;}
+    h3:hover{color: var(--Yellow);}
+.box .p{color: var(--Grey);
+    margin-top: 26px;
+    width: 310px;
+    font-size: 16px;
+    line-height: 20px;}
+.box .end{display: flex;
+    align-items: center;
+    margin-top: 20px
+}
+.box .end p{
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.box .end img{    width: 40px;}
+@media screen and (max-width: 500px) {
+.box{
+    width: 300px;
+}
+.box .img img{    width: 261px}
+.box .p{width: 283px}}
